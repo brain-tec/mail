@@ -30,6 +30,7 @@ addon | version | maintainers | summary
 [mail_force_email_notification](mail_force_email_notification/) | 18.0.1.0.0 |  | Context key to define notifications to be sent by emaildefined by force_notification_by_email context key
 [mail_inline_css](mail_inline_css/) | 18.0.1.0.0 |  | Convert style tags in inline style in your mails
 [mail_layout_preview](mail_layout_preview/) | 18.0.1.0.0 |  | Preview email templates in the browser
+[mail_message_search](mail_message_search/) | 18.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Mail Message Search
 [mail_notification_clean_status_error](mail_notification_clean_status_error/) | 18.0.1.0.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Extend Odoo scheduled action to also delete notifications in error.
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 18.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Apply a custom subject to mail notifications
 [mail_outbound_static](mail_outbound_static/) | 18.0.1.0.1 |  | Allows you to configure the from header for a mail server.
