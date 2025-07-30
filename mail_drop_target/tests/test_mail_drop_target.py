@@ -67,13 +67,15 @@ class TestMailDropTarget(TransactionCase):
             )
 
     def test_no_msgextract(self):
-        with self.assertRaises(exceptions.UserError), patch(
-            "odoo.addons.mail_drop_target.models.mail_thread.Message", new=False
+        with (
+            self.assertRaises(exceptions.UserError),
+            patch("odoo.addons.mail_drop_target.models.mail_thread.Message", new=False),
         ):
             self.test_msg()
 
-        with self.assertRaises(exceptions.UserError), patch(
-            "odoo.addons.mail_drop_target.models.mail_thread.Message", new=False
+        with (
+            self.assertRaises(exceptions.UserError),
+            patch("odoo.addons.mail_drop_target.models.mail_thread.Message", new=False),
         ):
             self.test_msg_with_attachment()
 
