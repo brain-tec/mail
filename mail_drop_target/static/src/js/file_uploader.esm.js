@@ -1,29 +1,32 @@
 /* @odoo-module */
-import {Chatter} from "@mail/core/web/chatter";
+import {Chatter} from "@mail/chatter/web_portal/chatter";
 import {patch} from "@web/core/utils/patch";
-import {useAttachmentUploader} from "@mail/core/common/attachment_uploader_hook";
+import {useService} from "@web/core/utils/hooks";
 import {AttachmentUploadService} from "@mail/core/common/attachment_upload_service";
 
 patch(AttachmentUploadService.prototype, {
-    async uploadFile(hooker, file, options) {
-        return super.uploadFile(hooker, file, options).then((result) => {
-            if (result?.email_upload === 1) {
-                hooker.onFileUploaded?.("email_upload");
-            }
-            return result;
-        });
+    async _processLoaded(thread, composer, attachmentData, tmpId, def) {
+        if (attachmentData.email_upload === 1) {
+            this._fileUploadBus.trigger("REFRESH_CHATTER", thread.id);
+        } else {
+            return super._processLoaded(thread, composer, attachmentData, tmpId, def);
+        }
     },
 });
 
 patch(Chatter.prototype, {
     setup() {
-        super.setup();
-        this.attachmentUploader = useAttachmentUploader(this.thread, {
-            onFileUploaded: (file) => {
-                if (file === "email_upload") {
-                    this.reloadParentView?.();
+        super.setup(...arguments);
+
+        this.attachmentUploadService = useService("mail.attachment_upload");
+
+        this.attachmentUploadService._fileUploadBus.addEventListener(
+            "REFRESH_CHATTER",
+            ({detail: threadId}) => {
+                if (this.state.thread?.id === threadId) {
+                    this.reloadParentView();
                 }
-            },
-        });
+            }
+        );
     },
 });

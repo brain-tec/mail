@@ -2,10 +2,10 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 from base64 import b64decode
 
+import chardet
 import lxml.html
 
 from odoo import _, api, exceptions, models
-from odoo.tools import pycompat, ustr
 
 try:
     from extract_msg import Message
@@ -90,6 +90,11 @@ class MailThread(models.AbstractModel):
             # Using extract_msg < 0.24.4
             message_id = message_msg.message_id
         msg_body = message_msg.htmlBody or message_msg.body
+        if isinstance(msg_body, bytes):
+            detection = chardet.detect(msg_body)
+            encoding = detection.get("encoding")
+            msg_body = msg_body.decode(encoding)
+
         subtype = (
             lxml.html.fromstring(msg_body).find(".//*") is not None
             and "html"
@@ -112,9 +117,8 @@ class MailThread(models.AbstractModel):
         )
         # We need to override message date, as an error rises when processing it
         # directly with headers
-        key = pycompat.to_text(ustr("date"))
-        del message_email[key]
-        message_email[key] = message_msg.date
+        del message_email["date"]
+        message_email["date"] = message_msg.date
         return self.message_drop(
             model,
             message_email.as_string(),
