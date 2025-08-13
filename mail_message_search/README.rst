@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 ===================
 Mail Message Search
 ===================
@@ -17,7 +13,7 @@ Mail Message Search
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fmail-lightgray.png?logo=github
@@ -61,6 +57,18 @@ This module uses direct keyword matching across key fields in
 ``mail.message``, offering more reliable results in multilingual
 environments.
 
+Configuration
+=============
+
+If your database is very large, you can limit how many messages a search
+returns to prevent crashes.
+
+-  Go to Settings ▸ Technical ▸ System Parameters.
+-  Add a new parameter:
+
+   -  Key: mail_message_search.message_limit
+   -  Value: your desired limit (e.g., 5000).
+
 Usage
 =====
 
@@ -88,10 +96,10 @@ Authors
 Contributors
 ------------
 
-- `Quartile <https://www.quartile.co>`__:
+-  `Quartile <https://www.quartile.co>`__:
 
-  - Aung Ko Ko Lin
-  - Yoshi Tashiro
+   -  Aung Ko Ko Lin
+   -  Yoshi Tashiro
 
 Maintainers
 -----------
