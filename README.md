@@ -40,6 +40,7 @@ addon | version | maintainers | summary
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 18.0.1.0.0 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 18.0.1.0.1 |  | Allows you to configure the from header for a mail server.
 [mail_partner_forwarding](mail_partner_forwarding/) | 18.0.1.0.0 |  | Forwarding notifications for partners
+[mail_partner_opt_out](mail_partner_opt_out/) | 18.0.1.0.0 |  | Add the partner's email to the blackmailed list
 [mail_post_defer](mail_post_defer/) | 18.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Faster and cancellable outgoing messages
 [mail_quoted_reply](mail_quoted_reply/) | 18.0.1.0.0 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 18.0.1.0.0 |  | Define a domain from which followers can be selected
