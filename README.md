@@ -30,7 +30,7 @@ addon | version | maintainers | summary
 [mail_autosubscribe](mail_autosubscribe/) | 18.0.1.1.0 |  | Automatically subscribe partners to its company's business documents
 [mail_composer_cc_bcc](mail_composer_cc_bcc/) | 18.0.1.0.2 | <a href='https://github.com/trisdoan'><img src='https://github.com/trisdoan.png' width='32' height='32' style='border-radius:50%;' alt='trisdoan'/></a> | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_debrand](mail_debrand/) | 18.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
-[mail_drop_target](mail_drop_target/) | 18.0.1.0.0 |  | Attach emails to Odoo by dragging them from your desktop
+[mail_drop_target](mail_drop_target/) | 18.0.1.0.1 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_extra_header](mail_extra_header/) | 18.0.1.0.0 |  | Adds extra headers per mail server to sent mails.
 [mail_force_email_notification](mail_force_email_notification/) | 18.0.1.0.0 |  | Context key to define notifications to be sent by emaildefined by force_notification_by_email context key
 [mail_inline_css](mail_inline_css/) | 18.0.1.0.0 |  | Convert style tags in inline style in your mails
