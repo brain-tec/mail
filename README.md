@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_search_mail_content](base_search_mail_content/) | 18.0.1.0.1 |  | Base Search Mail Content
+[base_search_mail_content](base_search_mail_content/) | 18.0.1.0.2 |  | Base Search Mail Content
 [mail_activity_board](mail_activity_board/) | 18.0.1.0.0 |  | Add Activity Boards
 [mail_activity_done](mail_activity_done/) | 18.0.1.0.0 |  | Mail Activity Done
 [mail_activity_team](mail_activity_team/) | 18.0.1.0.1 |  | Add Teams to Activities
