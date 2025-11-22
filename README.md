@@ -17,7 +17,11 @@ mail
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[mail_activity_reminder](mail_activity_reminder/) | 19.0.1.0.0 |  | Reminder notifications about planned activities
 
 [//]: # (end addons)
 
