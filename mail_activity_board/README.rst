@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 ===================
 Mail Activity Board
 ===================
@@ -17,7 +13,7 @@ Mail Activity Board
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fmail-lightgray.png?logo=github
@@ -78,21 +74,25 @@ Authors
 Contributors
 ------------
 
-- `SDI <https://www.sdi.es>`__:
+-  `SDI <https://www.sdi.es>`__:
 
-  - David Juaneda
+   -  David Juaneda
 
-- `ForgeFlow <https://www.forgeflow.com>`__:
+-  `ForgeFlow <https://www.forgeflow.com>`__:
 
-  - Miquel Raïch (miquel.raich@forgeflow.com)
+   -  Miquel Raïch (miquel.raich@forgeflow.com)
 
-- `Pesol <https://www.pesol.es>`__:
+-  `Pesol <https://www.pesol.es>`__:
 
-  - Pedro Gonzalez (pedro.gonzalez@pesol.es)
+   -  Pedro Gonzalez (pedro.gonzalez@pesol.es)
 
-- `ACSONE SA/NV <https://www.acsone.eu>`__
+-  `ACSONE SA/NV <https://www.acsone.eu>`__
 
-  - Laurent Mignon <laurent.mignon@acsone.eu>
+   -  Laurent Mignon <laurent.mignon@acsone.eu>
+
+-  `glueckkanja AG <https://www.glueckkanja.com>`__
+
+   -  Christopher Rogos <crogos@gmail.com>
 
 Maintainers
 -----------
