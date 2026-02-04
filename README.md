@@ -25,6 +25,7 @@ addon | version | maintainers | summary
 [mail_optional_autofollow](mail_optional_autofollow/) | 19.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 19.0.1.0.0 |  | Allows you to configure the from header for a mail server.
 [mail_post_defer](mail_post_defer/) | 19.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Faster and cancellable outgoing messages
+[mail_send_confirmation](mail_send_confirmation/) | 19.0.1.0.0 |  | Mail Send Confirmation
 
 [//]: # (end addons)
 
