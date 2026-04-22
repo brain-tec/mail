@@ -101,6 +101,10 @@ Contributors
 
   - Eduardo de Miguel
 
+- Codeforward <https://www.codeforward.nl>
+
+  - Sander Lienaerts
+
 Maintainers
 -----------
 
