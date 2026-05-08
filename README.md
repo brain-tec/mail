@@ -25,6 +25,7 @@ addon | version | maintainers | summary
 [mail_chatter_split](mail_chatter_split/) | 17.0.1.0.0 |  | Separate user messages, activities and automatic logs in the chatter
 [mail_message_search](mail_message_search/) | 17.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Mail Message Search
 [mail_notification_link](mail_notification_link/) | 17.0.1.0.0 |  | Navigate to document by clicking on notification name
+[mail_sent_history](mail_sent_history/) | 17.0.1.0.0 |  | View and browse messages and notes you have sent
 
 [//]: # (end addons)
 
