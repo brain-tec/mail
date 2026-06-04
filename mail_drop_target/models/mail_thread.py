@@ -8,6 +8,7 @@ import chardet
 import lxml.html
 
 from odoo import _, api, exceptions, models
+from odoo.tools import str2bool
 
 try:
     from extract_msg import Message
@@ -28,7 +29,7 @@ class MailThread(models.AbstractModel):
         strip_attachments=False,
         thread_id=None,
     ):
-        disable_notify_mail_drop_target = (
+        disable_notify_mail_drop_target = str2bool(
             self.env["ir.config_parameter"]
             .sudo()
             .get_param("mail_drop_target.disable_notify", default=False)
