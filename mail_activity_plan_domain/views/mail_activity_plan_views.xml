@@ -6,16 +6,14 @@
         <field name="model">mail.activity.plan</field>
         <field name="inherit_id" ref="mail.mail_activity_plan_view_form" />
         <field name="arch" type="xml">
-            <!-- Add domain field after res_model inside the notebook page -->
-            <xpath expr="//group[@name='plan_res_model']" position="after">
-                <group name="plan_domain" invisible="not res_model">
-                    <field
-                        name="domain"
-                        widget="domain"
-                        options="{'model': 'res_model'}"
-                    />
-                </group>
-            </xpath>
+            <field name="res_model" position="after">
+                <field
+                    name="domain"
+                    widget="domain"
+                    options="{'model': 'res_model'}"
+                    nvisible="not res_model"
+                />
+            </field>
         </field>
     </record>
 </odoo>

@@ -1,6 +1,6 @@
 To use this module:
 
-1. Go to **Discuss > Configuration > Activity Plans**.
+1. Go to **Settings > Technical > Activities > Activity Plans**.
 2. Open or create an activity plan.
 3. In the **Domain** field, set the domain that records must match for this
    plan to appear in the scheduling wizard

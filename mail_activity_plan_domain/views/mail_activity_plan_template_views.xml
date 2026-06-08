@@ -6,7 +6,7 @@
         <field name="model">mail.activity.plan</field>
         <field name="inherit_id" ref="mail.mail_activity_plan_view_form" />
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='template_ids']//tree" position="inside">
+            <xpath expr="//field[@name='template_ids']//list" position="inside">
                 <field name="domain" optional="hide" />
             </xpath>
         </field>

@@ -1,4 +1,4 @@
-from odoo import _, api, models
+from odoo import api, models
 from odoo.tools.safe_eval import safe_eval
 
 
@@ -22,6 +22,21 @@ class MailActivitySchedule(models.TransientModel):
         )
         return super()._compute_plan_id()
 
+    def _get_eval_context(self):
+        return {"uid": self.env.uid, "user": self.env.user}
+
+    def _get_summary_lines(self, templates):
+        # We filter the templates that will be displayed in the summary
+        new_templates = self.env[templates._name]
+        eval_context = self._get_eval_context()
+        for record in self._get_applied_on_records():
+            new_templates += templates.filtered(
+                lambda tpl, record=record: self._is_template_domain_matching(
+                    tpl, record, eval_context
+                )
+            )
+        return super()._get_summary_lines(new_templates)
+
     def _get_plan_available_base_domain(self):
         # Extend the base domain to also filter plans whose domain matches
         # at least one of the currently selected records (AND condition).
@@ -30,7 +45,7 @@ class MailActivitySchedule(models.TransientModel):
         if not records:
             return domain
         all_plans = self.env["mail.activity.plan"].search(domain)
-        eval_context = {"uid": self.env.uid, "user": self.env.user}
+        eval_context = self._get_eval_context()
         valid_ids = [
             plan.id
             for plan in all_plans
@@ -38,13 +53,11 @@ class MailActivitySchedule(models.TransientModel):
         ]
         return [("id", "in", valid_ids)]
 
-    def _is_plan_domain_matching(self, plan, records, eval_context=None):
+    def _is_plan_domain_matching(self, plan, records, eval_context):
         """Return True if the plan has no domain or if at least one of the
         given records matches the plan's domain."""
         if not plan.domain or plan.domain == "[]":
             return True
-        if eval_context is None:
-            eval_context = {"uid": self.env.uid, "user": self.env.user}
         return bool(records.filtered_domain(safe_eval(plan.domain, eval_context)))
 
     def action_schedule_plan(self):
@@ -69,8 +82,8 @@ class MailActivitySchedule(models.TransientModel):
         return {
             "type": "ir.actions.act_window",
             "res_model": self.res_model,
-            "name": _("Launch Plans"),
-            "view_mode": "tree,form",
+            "name": self.env._("Launch Plans"),
+            "view_mode": "list,form",
             "target": "current",
             "domain": [("id", "in", applied_on.ids)],
         }
@@ -93,16 +106,14 @@ class MailActivitySchedule(models.TransientModel):
         if not record_id:
             return templates
         record = self.env[self.res_model].browse(record_id)
-        eval_context = {"uid": self.env.uid, "user": self.env.user}
+        eval_context = self._get_eval_context()
         return templates.filtered(
             lambda tpl: self._is_template_domain_matching(tpl, record, eval_context)
         )
 
-    def _is_template_domain_matching(self, template, record, eval_context=None):
+    def _is_template_domain_matching(self, template, record, eval_context):
         """Return True if the template has no domain or if the given record
         matches the template's domain."""
         if not template.domain or template.domain == "[]":
             return True
-        if eval_context is None:
-            eval_context = {"uid": self.env.uid, "user": self.env.user}
         return bool(record.filtered_domain(safe_eval(template.domain, eval_context)))
