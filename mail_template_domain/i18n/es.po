@@ -2,37 +2,33 @@
 # This file contains the translation of the following modules:
 # 	* mail_template_domain
 #
-# Translators:
-# Cristina Hidalgo <cristina.hidalgo@tecnativa.com>, 2024
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0\n"
+"Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-15 09:47+0000\n"
-"PO-Revision-Date: 2026-04-15 09:47+0000\n"
-"Last-Translator: Cristina Hidalgo <cristina.hidalgo@tecnativa.com>\n"
-"Language-Team: none\n"
-"Language: es\n"
+"POT-Creation-Date: 2026-06-12 11:12+0000\n"
+"PO-Revision-Date: 2026-06-12 11:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
 
 #. module: mail_template_domain
-#: model:ir.model.fields,field_description:mail_template_domain.field_mail_template__filter_domain
-#: model_terms:ir.ui.view,arch_db:mail_template_domain.email_template_form_filter_domain
-msgid "Apply on"
-msgstr "Aplicar en"
-
-#. module: mail_template_domain
-#: model:ir.model,name:mail_template_domain.model_mail_compose_message
-msgid "Email composition wizard"
-msgstr "Asistente de redacción de correo electrónico"
+#: model:ir.model.fields,field_description:mail_template_domain.field_mail_compose_message__domain_template_id
+msgid "Domain Template"
+msgstr ""
 
 #. module: mail_template_domain
 #: model:ir.model,name:mail_template_domain.model_mail_template
 msgid "Email Templates"
 msgstr "Plantillas de correo electrónico"
+
+#. module: mail_template_domain
+#: model:ir.model,name:mail_template_domain.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Asistente de redacción de correo electrónico"
 
 #. module: mail_template_domain
 #: model:ir.model.fields,help:mail_template_domain.field_mail_template__filter_domain
@@ -44,13 +40,21 @@ msgstr ""
 "cuando el registro activo cumpla este dominio."
 
 #. module: mail_template_domain
-#: model:ir.model.fields,field_description:mail_template_domain.field_mail_compose_message__mail_template_res_ids
-msgid "Mail Template Res Ids"
-msgstr ""
+#: model:ir.model.fields,field_description:mail_template_domain.field_mail_template__filter_domain
+msgid "Restrict domain"
+msgstr "Restringir dominio"
 
 #. module: mail_template_domain
-#: model:ir.model.fields,help:mail_template_domain.field_mail_compose_message__mail_template_res_ids
-msgid ""
-"Technical field: res_ids as JSON used to filter available templates by"
-" domain."
-msgstr ""
+#: model_terms:ir.ui.view,arch_db:mail_template_domain.email_template_form_filter_domain
+msgid "Restrict to"
+msgstr "Restringir a"
+
+#. module: mail_template_domain
+#: model:ir.model.fields,field_description:mail_template_domain.field_mail_template__filter_model
+msgid "Restrict?"
+msgstr "¿Restringir?"
+
+#. module: mail_template_domain
+#: model:ir.model.fields,field_description:mail_template_domain.field_mail_compose_message__template_id
+msgid "Use template"
+msgstr "Usar plantilla"

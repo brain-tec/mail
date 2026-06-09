@@ -18,3 +18,8 @@ class MailTemplate(models.Model):
     def _compute_filter_domain(self):
         for item in self.filtered(lambda x: not x.filter_model):
             item.filter_domain = "[]"
+
+    @api.onchange("model_id")
+    def _onchange_model_id(self):
+        for item in self:
+            item.filter_domain = "[]"

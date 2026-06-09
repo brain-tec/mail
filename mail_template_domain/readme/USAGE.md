@@ -2,7 +2,8 @@ To use this module:
 
 1. Go to **Settings > Technical > Email > Templates**.
 2. Open or create a mail template.
-3. In the **Apply on** field (Settings tab), set the domain that records must
+3. Select an option under **Applies to** (such as Contact).
+4. Check the **Restrict to** checkbox, set the domain that records must
    match for this template to appear in the composer
    (e.g. `[('is_company', '=', True)]` to show the template only on contacts
    where **Is a Company** is set).
