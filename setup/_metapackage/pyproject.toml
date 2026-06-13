@@ -1,6 +1,6 @@
 [project]
 name = "odoo-addons-oca-mail"
-version = "17.0.20260609.0"
+version = "17.0.20260612.0"
 dependencies = [
     "odoo-addon-mail_activity_future_counter>=17.0dev,<17.1dev",
     "odoo-addon-mail_activity_plan_domain>=17.0dev,<17.1dev",
@@ -10,6 +10,7 @@ dependencies = [
     "odoo-addon-mail_notification_sound_volume>=17.0dev,<17.1dev",
     "odoo-addon-mail_notify_employee_leave>=17.0dev,<17.1dev",
     "odoo-addon-mail_sent_history>=17.0dev,<17.1dev",
+    "odoo-addon-mail_template_domain>=17.0dev,<17.1dev",
 ]
 classifiers=[
     "Programming Language :: Python",

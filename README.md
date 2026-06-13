@@ -29,6 +29,7 @@ addon | version | maintainers | summary
 [mail_notification_sound_volume](mail_notification_sound_volume/) | 17.0.1.0.0 |  | Allow users to configure notification sound volume
 [mail_notify_employee_leave](mail_notify_employee_leave/) | 17.0.1.0.0 |  | Notifies users when they mention or assign someone who is out of office.
 [mail_sent_history](mail_sent_history/) | 17.0.1.0.0 |  | View and browse messages and notes you have sent
+[mail_template_domain](mail_template_domain/) | 17.0.1.0.0 |  | Filter mail templates by domain on the active record
 
 [//]: # (end addons)
 
