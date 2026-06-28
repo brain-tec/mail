@@ -61,7 +61,7 @@ addon | version | maintainers | summary
 [mail_suggested_recipient_unchecked](mail_suggested_recipient_unchecked/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail suggested recipient unchecked
 [mail_template_domain](mail_template_domain/) | 18.0.1.0.0 |  | Filter mail templates by domain on the active record
 [mail_template_substitute](mail_template_substitute/) | 18.0.1.0.0 |  | This module allows to create substitution rules for mail templates.
-[mail_tracking](mail_tracking/) | 18.0.1.0.10 |  | Email tracking system for all mails sent
+[mail_tracking](mail_tracking/) | 18.0.1.0.11 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 18.0.1.0.0 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 18.0.1.0.0 |  | Improve mass mailing email tracking
 [outgoing_email_by_model](outgoing_email_by_model/) | 18.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Outgoing Email by Model
