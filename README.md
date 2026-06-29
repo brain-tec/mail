@@ -34,7 +34,7 @@ addon | version | maintainers | summary
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 19.0.1.0.0 |  | Define a domain from which followers can be selected
 [mail_restrict_send_button](mail_restrict_send_button/) | 19.0.1.0.0 |  | Security for Send Message Button on Chatter Area
 [mail_send_confirmation](mail_send_confirmation/) | 19.0.1.0.0 |  | Mail Send Confirmation
-[mail_tracking](mail_tracking/) | 19.0.1.0.2 |  | Email tracking system for all mails sent
+[mail_tracking](mail_tracking/) | 19.0.1.0.3 |  | Email tracking system for all mails sent
 
 [//]: # (end addons)
 
