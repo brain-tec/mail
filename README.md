@@ -1,4 +1,7 @@
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# mail
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/mail&target_branch=17.0)
 [![Pre-commit Status](https://github.com/OCA/mail/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/mail/actions/workflows/pre-commit.yml?query=branch%3A17.0)
 [![Build Status](https://github.com/OCA/mail/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/mail/actions/workflows/test.yml?query=branch%3A17.0)
@@ -6,8 +9,6 @@
 [![Translation Status](https://translation.odoo-community.org/widgets/mail-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/mail-17-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# mail
 
 mail
 
@@ -23,6 +24,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [mail_activity_future_counter](mail_activity_future_counter/) | 17.0.1.0.0 |  | Add a badge counter on the bottom-right of the activity clock icon of the navigation bar, showing the count of future activities.
 [mail_activity_plan_domain](mail_activity_plan_domain/) | 17.0.1.0.0 |  | Apply domain filters to activity plans and their templates
+[mail_attachment_xml_preview](mail_attachment_xml_preview/) | 17.0.1.0.0 |  | Preview XML attachments as a collapsible tree instead of raw text
 [mail_chatter_split](mail_chatter_split/) | 17.0.1.0.0 |  | Separate user messages, activities and automatic logs in the chatter
 [mail_message_search](mail_message_search/) | 17.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Mail Message Search
 [mail_notification_link](mail_notification_link/) | 17.0.1.0.0 |  | Navigate to document by clicking on notification name
